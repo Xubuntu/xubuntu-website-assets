@@ -40,6 +40,9 @@ div.gallery dl.gallery-item dd.gallery-caption {
 div.gallery a {
 	border-bottom: none;
 }
+
+/* Some fixes for colorboxes */
+
 .hb {
 	margin: 1em -35px 1em -35px;
 	padding: 1em 35px 1em 35px;
@@ -53,3 +56,26 @@ div.gallery a {
 	margin-top: -1.5em;
 	border-top: none;
 }
+
+/* 2-column view with boxes */
+
+.box2col {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:
+	space-between;
+}
+	.box2col div.box {
+		flex-grow: 1;
+		width: 33.3%;
+		line-height: 1.8em;
+		padding: 1em 1.5em;
+		background-color: #fff;
+	}
+		.box2col div.box.left { margin: 0 1em 2em 0; }
+		.box2col div.box.right { margin: 0 0 2em 1em; }
+		.box2col div.box.sh { box-shadow: 0 0 0.2em 0.2em rgba( 0, 0, 0, 0.1 ); }
+
+		.box2col h3 { margin-top: 0; }
+
+	h2 + .box2col { margin-top: 2em; }
