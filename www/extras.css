@@ -1,47 +1,6 @@
-/* Gallery styling for the old, non-HTML5 gallery */
-/* This can go once we've been upgraded to WordPress 3.9 */
-
-div.gallery {
-	width: 100%;
-}
-
-div.gallery:after {
-	content: ".";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
-
-div.gallery dl.gallery-item {
-	float: left;
-    
-	text-align: left !important;
-	margin-bottom: 0;
-}
-	div.gallery-columns-2 dl.gallery-item { width: 48% !important; margin-right: 2%; }
-	div.gallery-columns-3 dl.gallery-item { width: 31% !important; margin-right: 2%; }
-
-div.gallery dl.gallery-item img {
-	max-width: 100%;
-	height: auto;
-
-	border: none !important;
-	border-radius: 14px; 
-	border-bottom: 7px solid rgba( 0, 0, 0, 0.2 ) !important;
-}
-
-div.gallery dl.gallery-item dd.gallery-caption {
-	font-size: 90%;
-	width: 92%;
-	padding: 0 4% 0.7em 4%;
-}
-
-div.gallery a {
-	border-bottom: none;
-}
-
-/* Some fixes for colorboxes */
+/*  Some fixes for colorboxes
+ *  Fixed in r70
+ */
 
 .hb {
 	margin: 1em -35px 1em -35px;
