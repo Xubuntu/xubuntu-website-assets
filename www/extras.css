@@ -1,5 +1,8 @@
-/* 2-column view with boxes */
-
+/*  Information boxes in two columns
+ *  Usage: TinyMCE
+ *  Introduced in r78
+ *
+ */
 .box2col {
 	display: flex;
 	flex-wrap: wrap;
@@ -20,7 +23,6 @@
 
 	h2 + .box2col { margin-top: 2em; }
 
-/* Responsivity for 2-column view boxes */
 @media screen and (max-width: 800px) {
 	.box2col {
 		display: block;
