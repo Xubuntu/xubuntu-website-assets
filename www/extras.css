@@ -1,21 +1,3 @@
-/*  Some fixes for colorboxes
- *  Fixed in r70
- */
-
-.hb {
-	margin: 1em -35px 1em -35px;
-	padding: 1em 35px 1em 35px;
-	font-size: 115%; 
-}
-.hb h2 {
-	font-size: 150%;
- 	margin-bottom: 0.4em;
-}
-.hb + .hb {
-	margin-top: -1.5em;
-	border-top: none;
-}
-
 /* 2-column view with boxes */
 
 .box2col {
