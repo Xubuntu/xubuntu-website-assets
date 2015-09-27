@@ -1,55 +1,6 @@
-/*  Some fixes for colorboxes
- *  Fixed in r70
- */
-
-.hb {
-	margin: 1em -35px 1em -35px;
-	padding: 1em 35px 1em 35px;
-	font-size: 115%; 
-}
-.hb h2 {
-	font-size: 150%;
- 	margin-bottom: 0.4em;
-}
-.hb + .hb {
-	margin-top: -1.5em;
-	border-top: none;
-}
-
-/* 2-column view with boxes */
-
-.box2col {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:
-	space-between;
-}
-	.box2col div.box {
-		flex-grow: 1;
-		width: 33.3%;
-		line-height: 1.8em;
-		padding: 1em 1.5em;
-		background-color: #fff;
-		border-top: 0.5em solid rgba( 0, 0, 0, 0.5 );
-	}
-		.box2col div.box.left { margin: 0 1em 2em 0; }
-		.box2col div.box.right { margin: 0 0 2em 1em; }
-		.box2col h3 { margin-top: 0; }
-
-	h2 + .box2col { margin-top: 2em; }
-
-/* Responsivity for 2-column view boxes */
-@media screen and (max-width: 800px) {
-	.box2col {
-		display: block;
-	}
-	.box2col div.box {
-		width: auto;
-		margin: 0 0 1em 0 !important;
-	}
-}
-@media screen and (max-width: 600px) {
-	.box2col div.box {
-		padding: 0.7em 1em;
-	}
+/* Make sure images in post do not overlap the content area */
+.post-post img,
+.post-post figure {
+	max-width: 100%;
+	height: auto;
 }
