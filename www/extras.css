@@ -1,6 +1,0 @@
-/* Make sure images in post do not overlap the content area */
-.post-post img,
-.post-post figure {
-	max-width: 100%;
-	height: auto;
-}
